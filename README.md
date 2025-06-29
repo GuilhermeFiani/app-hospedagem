@@ -25,9 +25,9 @@ Cada tipo de usuário possui um fluxo de acesso diferenciado no sistema, com per
 Para o escopo do trabalho final, os seguintes requisitos foram definidos:
 
 **Autenticação e Autorização**:  
-+ RF-1. O usuário deve ser capaz de criar uma conta no aplicativo.  
-+ RF-2. O usuário deve ser capaz de realizar login com suas credenciais, e o sistema deve guardar o hash da senha de forma segura.  
-+ RF-3. O sistema deve implementar controle de acesso para garantir que cada tipo de usuário (anfitrião/hóspede) acesse apenas as funcionalidades permitidas para seu papel.
++ RF-1. O usuário deve ser capaz de criar uma conta no aplicativo. ✅ 
++ RF-2. O usuário deve ser capaz de realizar login com suas credenciais, e o sistema deve guardar o hash da senha de forma segura. ✅ 
++ RF-3. O sistema deve implementar controle de acesso para garantir que cada tipo de usuário (anfitrião/hóspede) acesse apenas as funcionalidades permitidas para seu papel. ✅ 
 
 **Gerenciamento de Hospedagens (Anfitrião)**  
 + RF-4. O anfitrião deve ser capaz de criar, editar e remover hospedagens que estejam associadas ao seu perfil.

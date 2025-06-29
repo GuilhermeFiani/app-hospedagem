@@ -11,9 +11,10 @@
 
     <!-- Home screens -->
     <string name="welcome_anfitriao">Bem-vindo, Anfitrião!</string>
+    <string name="welcome_hospede">Bem-vindo, Hóspede!</string>
     <string name="anfitriao_description">Aqui você poderá gerenciar suas hospedagens e criar promoções.</string>
+    <string name="hospede_description">Aqui você poderá buscar e reservar hospedagens.</string>
     <string name="features_coming_soon">Funcionalidades em desenvolvimento...</string>
     <string name="logout_button">Sair</string>
-
 
 </resources>

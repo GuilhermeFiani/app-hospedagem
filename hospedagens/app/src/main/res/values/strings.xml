@@ -25,4 +25,22 @@
     <string name="features_coming_soon">Funcionalidades em desenvolvimento...</string>
     <string name="logout_button">Sair</string>
 
+    <string name="adicionar">Adicionar</string>
+    <string name="editar">Editar</string>
+    <string name="remover">Remover</string>
+    <string name="limpar">Limpar</string>
+
+    <string name="titulo_hospedagem">Título da Hospedagem</string>
+    <string name="descricao">Descrição</string>
+    <string name="cidade">Cidade</string>
+    <string name="endereco">Endereço</string>
+    <string name="preco_por_noite">Preço por Noite (R$)</string>
+    <string name="capacidade_maxima">Capacidade Máxima</string>
+    <string name="tipo_imovel">Tipo do Imóvel</string>
+    <string name="hospedagem_disponivel">Hospedagem Disponível</string>
+    <string name="minhas_hospedagens">Minhas Hospedagens</string>
+    <string name="nenhuma_hospedagem_cadastrada">Nenhuma hospedagem cadastrada ainda.\nClique em "Adicionar" para criar sua primeira hospedagem.</string>
+
+
+
 </resources>

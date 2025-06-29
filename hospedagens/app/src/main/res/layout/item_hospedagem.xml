@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Título e Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Título da Hospedagem"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disponível"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textColor="@color/accent_color" />
+    </LinearLayout>
+
+    <!-- Cidade e Tipo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tvCidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cidade"
+            android:textSize="14sp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvTipoImovel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casa"
+            android:textSize="14sp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/tvPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 120,00/noite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical" />
+</LinearLayout>

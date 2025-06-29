@@ -65,7 +65,6 @@ public class RegisterFragment extends Fragment {
 
         RadioButton selectedRadio = getView().findViewById(selectedId);
         String userType = selectedRadio.getText().toString().toLowerCase();
-        System.out.println(userType);
 
         // Verifica se usuário já existe
         User existingUser = database.userDao().getUserByEmail(email);
@@ -76,7 +75,7 @@ public class RegisterFragment extends Fragment {
 
         String passwordHash = PasswordUtils.hashPassword(password);
         User newUser = new User(email, passwordHash, name, userType);
-
+        // System.out.println(newUser.getId());
         database.userDao().insert(newUser);
         Toast.makeText(getContext(), "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
 

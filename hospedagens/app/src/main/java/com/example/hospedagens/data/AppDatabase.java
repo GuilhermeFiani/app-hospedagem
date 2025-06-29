@@ -5,9 +5,15 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import android.content.Context;
 
-@Database(entities = {User.class}, version = 1)
+import com.example.hospedagens.data.HospedagemDao;
+import com.example.hospedagens.data.UserDao;
+import com.example.hospedagens.data.User;
+import com.example.hospedagens.data.Hospedagem;
+
+@Database(entities = {User.class, Hospedagem.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UserDao userDao();
+    public abstract HospedagemDao hospedagemDao();
 
     private static volatile AppDatabase INSTANCE;
 
@@ -18,6 +24,7 @@ public abstract class AppDatabase extends RoomDatabase {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDatabase.class, "hospedagens_database")
                             .allowMainThreadQueries()
+                            .fallbackToDestructiveMigration()
                             .build();
                 }
             }

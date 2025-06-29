@@ -52,21 +52,22 @@ public class LoginFragment extends Fragment {
         User user = database.userDao().login(email, passwordHash);
 
         if (user != null) {
-            navigateToUserHome(user.getUserType());
+            navigateToUserHome(user.getUserType(), user.getId());
         } else {
             Toast.makeText(getContext(), "Credenciais inválidas", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void navigateToUserHome(String userType) {
+    private void navigateToUserHome(String userType, int userId) {
         Fragment fragment;
-        System.out.println(userType);
+        Bundle bundle = new Bundle();
+        bundle.putInt("userId", userId);
         if ("anfitrião".equals(userType)) {
             fragment = new AnfitriaoFragment();
         } else {
             fragment = new HospedeFragment();
         }
-
+        fragment.setArguments(bundle);
         ((MainActivity) getActivity()).loadFragment(fragment);
     }
 

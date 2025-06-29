@@ -8,4 +8,12 @@
     <string name="password_hint">Senha</string>
     <string name="login_button">Entrar</string>
     <string name="register_button">Cadastrar</string>
+
+    <!-- Home screens -->
+    <string name="welcome_anfitriao">Bem-vindo, Anfitrião!</string>
+    <string name="anfitriao_description">Aqui você poderá gerenciar suas hospedagens e criar promoções.</string>
+    <string name="features_coming_soon">Funcionalidades em desenvolvimento...</string>
+    <string name="logout_button">Sair</string>
+
+
 </resources>

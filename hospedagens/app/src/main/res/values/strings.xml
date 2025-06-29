@@ -9,6 +9,14 @@
     <string name="login_button">Entrar</string>
     <string name="register_button">Cadastrar</string>
 
+    <!-- Register -->
+    <string name="register_title">Cadastro</string>
+    <string name="name_hint">Nome completo</string>
+    <string name="user_type_label">Tipo de usuário:</string>
+    <string name="anfitriao_option">Anfitrião</string>
+    <string name="hospede_option">Hóspede</string>
+    <string name="back_to_login">Voltar ao Login</string>
+
     <!-- Home screens -->
     <string name="welcome_anfitriao">Bem-vindo, Anfitrião!</string>
     <string name="welcome_hospede">Bem-vindo, Hóspede!</string>

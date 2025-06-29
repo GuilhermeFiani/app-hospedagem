@@ -30,7 +30,7 @@ Para o escopo do trabalho final, os seguintes requisitos foram definidos:
 + RF-3. O sistema deve implementar controle de acesso para garantir que cada tipo de usuário (anfitrião/hóspede) acesse apenas as funcionalidades permitidas para seu papel. ✅ 
 
 **Gerenciamento de Hospedagens (Anfitrião)**  
-+ RF-4. O anfitrião deve ser capaz de criar, editar e remover hospedagens que estejam associadas ao seu perfil.
++ RF-4. O anfitrião deve ser capaz de criar, editar e remover hospedagens que estejam associadas ao seu perfil. ✅
 
 **Notificações**  
 + RF-5. O anfitrião deve ser capaz de criar e configurar notificações de desconto ou promoções para suas hospedagens, visíveis para os hóspedes.

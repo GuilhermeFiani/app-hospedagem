@@ -10,10 +10,11 @@ import com.example.hospedagens.data.UserDao;
 import com.example.hospedagens.data.User;
 import com.example.hospedagens.data.Hospedagem;
 
-@Database(entities = {User.class, Hospedagem.class}, version = 2)
+@Database(entities = {User.class, Hospedagem.class, Reserva.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UserDao userDao();
     public abstract HospedagemDao hospedagemDao();
+    public abstract ReservaDao reservaDao();
 
     private static volatile AppDatabase INSTANCE;
 

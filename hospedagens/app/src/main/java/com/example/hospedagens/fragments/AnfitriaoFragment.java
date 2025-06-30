@@ -137,11 +137,8 @@ public class AnfitriaoFragment extends Fragment {
         btnLimpar.setOnClickListener(v -> limparFormulario());
         listViewHospedagens.setOnItemClickListener((parent, view, position, id) -> {
             hospedagemSelecionada = hospedagens.get(position);
-            System.out.println("clicado 2");
             preencherFormulario(hospedagemSelecionada);
-            System.out.println("clicado 3");
             alternarModoEdicao(true);
-            System.out.println("clicado 4");
         });
     }
 

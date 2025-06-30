@@ -113,16 +113,4 @@ public class HospedagemRepository {
             }
         });
     }
-
-    // Buscar hospedagens por cidade
-    public void buscarHospedagensPorCidade(String cidade, HospedagensListCallback callback) {
-        executor.execute(() -> {
-            try {
-                List<Hospedagem> hospedagens = hospedagemDao.buscarHospedagensPorCidade(cidade);
-                callback.onSuccess(hospedagens);
-            } catch (Exception e) {
-                callback.onError("Erro ao buscar hospedagens por cidade: " + e.getMessage());
-            }
-        });
-    }
 }
